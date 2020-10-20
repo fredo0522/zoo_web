@@ -18,7 +18,7 @@ class HeaderBar extends Component {
           <li className="nav-item">
             <div className="nav-link">
               <Link to='/who'>
-                Quienes somos?
+                ¿Quienes somos?
               </Link>
             </div>
           </li>

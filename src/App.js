@@ -5,6 +5,7 @@ import {Route, Switch} from 'react-router-dom';
 import HeaderBar from './components/HeaderBar';
 import Animals from './pages/Animals';
 import AnimalDetails from './pages/AnimalDetails';
+import Who from './pages/Who';
 
 class App extends Component {
   render() {
@@ -23,7 +24,7 @@ class App extends Component {
               <AnimalDetails />
             </Route>
             <Route path='/who' exact>
-              {/* <Who /> */}
+              <Who />
             </Route>
           </Switch>
         </div>

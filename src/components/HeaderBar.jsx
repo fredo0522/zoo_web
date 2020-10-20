@@ -1,25 +1,41 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
+import logo from './images/zoo_logo.jpg'
+import style from './HeaderBar.module.css'
+import {NavLink} from "react-router-dom";
 
 class HeaderBar extends Component {
   render() {
-    return(
+    return (
       <nav className='navbar navbar-expand-lg navbar-light bg-light fixed-top'>
-        <div className='navbar-brand'><Link to='/'>Zoo </Link></div>
+        <div className='navbar-brand'>
+          <Link to='/'>
+            <img className={style.logoImage} src={logo} alt='Home' />
+          </Link>
+        </div>
 
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
             <div className="nav-link">
-              <Link to='/animals'>
+              <NavLink
+                activeClassName={style.activeLink}
+                className={style.hyper}
+                to="/animals" exact
+              >
                 Animales
-              </Link>
+              </NavLink>
             </div>
           </li>
           <li className="nav-item">
             <div className="nav-link">
-              <Link to='/who'>
+              <NavLink
+                activeClassName={style.activeLink}
+                className={style.hyper}
+                to='/who'
+                exact
+              >
                 ¿Quienes somos?
-              </Link>
+              </NavLink>
             </div>
           </li>
         </ul>

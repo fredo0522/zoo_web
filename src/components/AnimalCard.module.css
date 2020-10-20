@@ -1,0 +1,15 @@
+.cardContainer {
+  width: 100%;
+  padding: 10px;
+}
+
+.animalImage {
+  background-color: lightgray;
+  min-height: 200px;
+  min-width: 100%;
+}
+
+.animalContainer {
+  border: 1px solid lightgray;
+  padding: 10px;
+}

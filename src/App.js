@@ -5,7 +5,7 @@ import HeaderBar from './components/HeaderBar';
 import Animals from './pages/Animals';
 import AnimalDetails from './pages/AnimalDetails';
 import Who from './pages/Who';
-import { GoMarkGithub } from 'react-icons/go';
+import { FaInstagram } from 'react-icons/fa';
 import { FaTwitter } from "react-icons/fa";
 import {FaFacebookSquare} from "react-icons/fa";
 import GenericImage from './images/generic_image.png';
@@ -37,7 +37,7 @@ class App extends Component {
           <footer className="footer-style container">
             <div className="row row-cols-md-4 mt-4">
               <div className="col mb-4 mt-2">
-                <a href="#" className="text-center"><GoMarkGithub className="footer-style-icons"/></a>
+                <a href="#" className="text-center"><FaInstagram className="footer-style-icons"/></a>
                 <a href="#" className="text-center ml-4"><FaTwitter className="footer-style-icons"/></a>
                 <a href="#" className="text-center ml-4"> <FaFacebookSquare className="footer-style-icons"/></a>
               </div>

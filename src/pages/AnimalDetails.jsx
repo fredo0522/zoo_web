@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 class AnimalDetails extends Component {
   render() {
     return(
-      <div className='container'>
+      <div className='container mb-5'>
           <img
             src={this.props.animal.bg_img}
             className="img-fluid rounded mx-auto d-block mb-3 mt-3"

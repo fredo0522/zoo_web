@@ -6,7 +6,7 @@ import AnimalCard from '../components/AnimalCard';
 class Animals extends Component {
   render() {
     return(
-      <div className='container mt-4'>
+      <div className='container mt-4 mb-4'>
         <div className="input-group mb-3">
           <div class="input-group-prepend">
             <span className="input-group-text" id="basic-addon3">¿Qué animal estas buscando?</span>

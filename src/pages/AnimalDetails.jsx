@@ -10,7 +10,7 @@ class AnimalDetails extends Component {
             className="img-fluid rounded mx-auto d-block mb-3 mt-3"
             alt={this.props.animal.name}
           />
-          <h5 className="card-title">{this.props.animal.name}</h5>
+          <h1 className="card-title">{this.props.animal.name}</h1>
           <p className="card-text">{this.props.animal.bg_description}</p>
       </div>
     );

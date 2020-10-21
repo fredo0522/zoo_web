@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import styles from './AnimalCard.module.css';
 import {Link} from 'react-router-dom';
 import {setAnimal} from '../actions/animal';
 import {connect} from 'react-redux';
@@ -7,7 +6,7 @@ import {connect} from 'react-redux';
 class AnimalCard extends Component {
   render() {
     return (
-      <div className={"card" + styles.cardContainer}>
+      <div className='card'>
         <img
           className="card-img-top"
           src={this.props.animal.img}
@@ -22,7 +21,7 @@ class AnimalCard extends Component {
             className='btn btn-primary'
           >
             Ver más
-                </Link>
+          </Link>
         </div>
       </div>
     );

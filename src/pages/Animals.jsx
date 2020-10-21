@@ -6,14 +6,16 @@ import AnimalCard from '../components/AnimalCard';
 class Animals extends Component {
   render() {
     return(
-      <div className='row'>
-        {
-          this.props.animals.map(animal => {
-            return <div className='col-sm-4' key={animal.id}>
-              <AnimalCard animal={animal} />
-            </div>
-          })
-        }
+      <div className='container mt-4'>
+        <div className='row row-cols-md-3'>
+          {
+            this.props.animals.map(animal => {
+              return <div className='col mb-4' key={animal.id}>
+                <AnimalCard animal={animal} />
+              </div>
+            })
+          }
+        </div>
       </div>
     );
   }

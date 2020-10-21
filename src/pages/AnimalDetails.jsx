@@ -4,15 +4,16 @@ import { connect } from 'react-redux';
 class AnimalDetails extends Component {
   render() {
     return(
-      <div>
-        <p>{this.props.animal.name}</p>
-        <p>{this.props.animal.description}</p>
+      <div className='container'>
+          <img
+            src={this.props.animal.bg_img}
+            className="img-fluid rounded mx-auto d-block mb-3 mt-3"
+            alt={this.props.animal.name}
+          />
+          <h5 className="card-title">{this.props.animal.name}</h5>
+          <p className="card-text">{this.props.animal.bg_description}</p>
       </div>
     );
-  }
-
-  componentDidMount() {
-    console.log('Did Mount AnimalDetails!');
   }
 }
 

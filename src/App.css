@@ -18,3 +18,20 @@ body {
   }
 }
 
+.navbar-brand {
+  background-color: #0d47a1;
+  color: #e3f2fd !important;
+}
+
+.footer-style {
+  background-color: #303030;
+  color: #FFFFFF !important;
+  margin: auto;
+}
+
+.footer-style-icons {
+  font-size: 2.8em;
+  color: #FFFFFF !important;
+  background-color: #303030;
+}
+

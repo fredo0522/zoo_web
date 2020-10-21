@@ -1,26 +1,10 @@
 .logoImage {
   background-color: lightgray;
-  width: 30%;
+  width: 40%;
   height: 20%;
 }
 
-.hyper:hover {
-  color: #181818;
-  text-decoration: none;
-}
-
-.hyper:link{
-  color: #181818;
-  text-decoration: none;
-  font-size: 30px;
-}
-
-.activeLink {
-  color: blue !important;
-}
-
-.hyper:visited {
-  color: #181818;
-  text-decoration: none;
+.bigger {
+  font-size: 25px !important;
 }
 

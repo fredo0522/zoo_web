@@ -18,7 +18,8 @@ class AnimalCard extends Component {
 
           <Link
             onClick={this.onAnimalCardSelect}
-            to='/details'>Ver más</Link>
+            to='/details'>Ver más
+          </Link>
         </div>
       </div>
     );

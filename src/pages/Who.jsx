@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import style from './Who.module.css';
 
 class Who extends Component {
   render() {
     return (
-      <div>¿Quienes somos?</div>
+      <div className={style.mainFrame}>¿Quienes somos?</div>
     );
   }
 }

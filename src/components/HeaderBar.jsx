@@ -9,17 +9,21 @@ class HeaderBar extends Component {
     return (
       <nav className='navbar navbar-expand-lg navbar-light bg-light fixed-top'>
         <div className='navbar-brand'>
-          <Link to='/'>
-            <img className={style.logoImage} src={logo} alt='Home' />
-          </Link>
+          <NavLink
+            activeClassName="navbar-brand"
+            className="navbar-brand"
+            to="/" exact
+          >
+            Zoologico Cali
+          </NavLink>
         </div>
 
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
             <div className="nav-link">
               <NavLink
-                activeClassName={style.activeLink}
-                className={style.hyper}
+                activeClassName='nav-item active'
+                className='nav-link'
                 to="/animals" exact
               >
                 Animales
@@ -29,8 +33,8 @@ class HeaderBar extends Component {
           <li className="nav-item">
             <div className="nav-link">
               <NavLink
-                activeClassName={style.activeLink}
-                className={style.hyper}
+                activeClassName='nav-item active'
+                className='nav-link'
                 to='/who'
                 exact
               >

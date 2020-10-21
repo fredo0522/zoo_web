@@ -1,19 +1,4 @@
 .cardContainer {
-  width: 100%;
-  padding: 5%;
-  /* padding-top: 5%; */
+  width: 18rem;
 }
 
-.animalImage {
-  background-color: lightgray;
-  width: 70%;
-  height: 20%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.animalContainer {
-  border: 1px solid lightgray;
-  padding: 10px;
-}

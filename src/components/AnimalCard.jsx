@@ -7,19 +7,22 @@ import {connect} from 'react-redux';
 class AnimalCard extends Component {
   render() {
     return (
-      <div className={styles.cardContainer}>
-        <div className={styles.animalContainer}>
-          <img
-            src={this.props.animal.img}
-            className={styles.animalImage}
-            alt='imagen del animal' />
-          <h3>{this.props.animal.name}</h3>
-          <p>{this.props.animal.description}</p>
-
+      <div className={"card" + styles.cardContainer}>
+        <img
+          className="card-img-top"
+          src={this.props.animal.img}
+          alt={this.props.animal.name}
+        />
+        <div className="card-body">
+          <h5 className="card-title">{this.props.animal.name}</h5>
+          <p className="card-text">{this.props.animal.description}</p>
           <Link
             onClick={this.onAnimalCardSelect}
-            to='/details'>Ver más
-          </Link>
+            to='/details'
+            className='btn btn-primary'
+          >
+            Ver más
+                </Link>
         </div>
       </div>
     );

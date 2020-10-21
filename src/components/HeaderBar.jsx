@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import logo from './images/zoo_logo.jpg'
-import style from './HeaderBar.module.css'
+// import {Link} from 'react-router-dom';
+// import logo from './images/zoo_logo.jpg'
+// import style from './HeaderBar.module.css'
 import {NavLink} from "react-router-dom";
 
 class HeaderBar extends Component {

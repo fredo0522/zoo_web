@@ -10,7 +10,7 @@ let initialState = {
   {
     id: 2,
     name: 'Zorro Cañero',
-    description: 'Descripción del Jaguar',
+    description: 'Descripción del Zorro Cañero',
     img: 'https://www.zoologicodecali.com.co/images/zooanimalesapp/zorrocaeroh.jpg'
   },
   {

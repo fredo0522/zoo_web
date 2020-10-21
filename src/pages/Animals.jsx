@@ -1,17 +1,24 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 import AnimalCard from '../components/AnimalCard';
 
 class Animals extends Component {
   render() {
-    return(
+    return (
       <div className='container mt-4 mb-4'>
         <div className="input-group mb-3">
           <div class="input-group-prepend">
-            <span className="input-group-text" id="basic-addon3">¿Qué animal estas buscando?</span>
+            <span className="input-group-text" id="basic-addon3">
+              ¿Qué animal estas buscando?
+            </span>
           </div>
-          <input type="text" className="form-control" id="basic-url" aria-describedby="basic-addon3"/>
+          <input
+            type="text"
+            className="form-control"
+            id="basic-url"
+            aria-describedby="basic-addon3"
+          />
         </div>
         <div className='row row-cols-md-3'>
           {

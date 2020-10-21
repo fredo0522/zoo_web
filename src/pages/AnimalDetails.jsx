@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 class AnimalDetails extends Component {
   render() {
-    return(
+    return (
       <div className='container mb-5'>
-          <img
-            src={this.props.animal.bg_img}
-            className="img-fluid rounded mx-auto d-block mb-3 mt-3"
-            alt={this.props.animal.name}
-          />
-          <h1 className="card-title">{this.props.animal.name}</h1>
-          <p className="card-text">{this.props.animal.bg_description}</p>
+        <img
+          src={this.props.animal.bg_img}
+          className="img-fluid rounded mx-auto d-block mb-3 mt-3"
+          alt={this.props.animal.name}
+        />
+        <h1 className="card-title">{this.props.animal.name}</h1>
+        <p className="card-text">{this.props.animal.bg_description}</p>
       </div>
     );
   }

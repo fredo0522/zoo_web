@@ -5,8 +5,8 @@ import HeaderBar from './components/HeaderBar';
 import Animals from './pages/Animals';
 import AnimalDetails from './pages/AnimalDetails';
 import Who from './pages/Who';
-import { FaInstagram } from 'react-icons/fa';
-import { FaTwitter } from "react-icons/fa";
+import {FaInstagram} from 'react-icons/fa';
+import {FaTwitter} from "react-icons/fa";
 import {FaFacebookSquare} from "react-icons/fa";
 import GenericImage from './images/generic_image.png';
 
@@ -37,9 +37,15 @@ class App extends Component {
           <footer className="footer-style container">
             <div className="row row-cols-md-4 mt-4">
               <div className="col mb-4 mt-2">
-                <a href="#" className="text-center"><FaInstagram className="footer-style-icons"/></a>
-                <a href="#" className="text-center ml-4"><FaTwitter className="footer-style-icons"/></a>
-                <a href="#" className="text-center ml-4"> <FaFacebookSquare className="footer-style-icons"/></a>
+                <a href="#" className="text-center">
+                  <FaInstagram className="footer-style-icons" />
+                </a>
+                <a href="#" className="text-center ml-4">
+                  <FaTwitter className="footer-style-icons" />
+                </a>
+                <a href="#" className="text-center ml-4">
+                  <FaFacebookSquare className="footer-style-icons" />
+                </a>
               </div>
               <div className="col mb-4 mt-2">
                 PBX (57 2) 4880888 - Cra. 2 oeste Calle 14 - Santa Teresita. Cali - Colombia. / Desarrollo
@@ -50,7 +56,7 @@ class App extends Component {
                   alt="Generic Image"
                   className="img-fluid w-100 rounded mx-auto d-block mt-3"
                 />
-            </div>
+              </div>
             </div>
           </footer>
         </div>

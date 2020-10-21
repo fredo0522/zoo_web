@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
 
 class HeaderBar extends Component {
   render() {
@@ -44,9 +45,11 @@ class HeaderBar extends Component {
 
           <form className="form-inline mt-2 mt-md-0">
             <div className="input-group-prepend">
-              <span className="input-group-text" id="basic-addon3">&#x2315;</span>
+              <span className="input-group-text" id="iconSearch">
+                <FaSearch className="headerBar-icons"/>
+              </span>
             </div>
-            <input className="form-control mr-sm-2" type="text" aria-describedby="basic-addon3"/>
+            <input className="form-control mr-sm-2" type="text" aria-describedby="iconSearch"/>
           </form>
         </div>
       </nav>

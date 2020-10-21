@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import {Route, Switch} from 'react-router-dom';
 import HeaderBar from './components/HeaderBar';
@@ -9,7 +8,7 @@ import Who from './pages/Who';
 import { GoMarkGithub } from 'react-icons/go';
 import { FaTwitter } from "react-icons/fa";
 import {FaFacebookSquare} from "react-icons/fa";
-import GenericImage from './images/generic_image.png'
+import GenericImage from './images/generic_image.png';
 
 class App extends Component {
   render() {
@@ -32,9 +31,11 @@ class App extends Component {
             </Route>
           </Switch>
         </div>
-        <div className="mx-auto mt-5">
+
+        {/* -------footer----- */}
+        <div className="mx-auto mt-5 mb-3">
           <footer className="footer-style container">
-            <div className="row row-cols-md-4">
+            <div className="row row-cols-md-4 mt-4">
               <div className="col mb-4 mt-2">
                 <a href="#" className="text-center"><GoMarkGithub className="footer-style-icons"/></a>
                 <a href="#" className="text-center ml-4"><FaTwitter className="footer-style-icons"/></a>

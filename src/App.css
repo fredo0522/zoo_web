@@ -49,16 +49,3 @@ body {
   border-color:  #1565c0 !important;
 }
 
-.reactPlayerWrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.reactPlayerDimensions {
-  position: relative;
-}
-
-.reactPlayerDimensions > div {
-  position: absolute;
-}
-

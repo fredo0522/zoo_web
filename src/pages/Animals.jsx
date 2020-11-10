@@ -23,7 +23,7 @@ class Animals extends Component {
         <div className='row row-cols-md-3'>
           {
             this.props.animals.map(animal => {
-              return <div className='col mb-4' key={animal.id}>
+              return <div className='col-sm mb-4' key={animal.id}>
                 <AnimalCard animal={animal} />
               </div>
             })

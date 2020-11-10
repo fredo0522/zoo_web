@@ -5,9 +5,9 @@ import HeaderBar from './components/HeaderBar';
 import Animals from './pages/Animals';
 import AnimalDetails from './pages/AnimalDetails';
 import Who from './pages/Who';
-import {FaInstagram} from 'react-icons/fa';
 import {FaTwitter} from "react-icons/fa";
 import {FaFacebookSquare} from "react-icons/fa";
+import {FaYoutube} from "react-icons/fa";
 import GenericImage from './images/generic_image.png';
 
 class App extends Component {
@@ -33,27 +33,27 @@ class App extends Component {
         </div>
 
         {/* -------footer----- */}
-        <div className="mx-auto mt-5 mb-3">
-          <footer className="footer-style container">
-            <div className="row row-cols-md-4 mt-4">
-              <div className="col mb-4 mt-2">
-                <a href="#" className="text-center">
-                  <FaInstagram className="footer-style-icons" />
+        <div className="mx-auto">
+          <footer className="footer-style container-fluid">
+            <div className="row row-cols-md-4">
+              <div className="col mb-5">
+                <a href="https://www.youtube.com/user/zoocalitv" className="text-center">
+                  <FaYoutube className="footer-style-icons ml-4" />
                 </a>
-                <a href="#" className="text-center ml-4">
+                <a href="https://twitter.com/" className="text-center ml-4">
                   <FaTwitter className="footer-style-icons" />
                 </a>
-                <a href="#" className="text-center ml-4">
+                <a href="https://es-es.facebook.com/zoologicodecali" className="text-center ml-4">
                   <FaFacebookSquare className="footer-style-icons" />
                 </a>
               </div>
-              <div className="col mb-4 mt-2">
+              <div className="col mb-5">
                 PBX (57 2) 4880888 - Cra. 2 oeste Calle 14 - Santa Teresita. Cali - Colombia. / Desarrollo
               </div>
-              <div className="col">
+              <div className="col mb-5">
                 <img
                   src={GenericImage}
-                  alt="Generic Image"
+                  alt="Generic Footer"
                   className="img-fluid w-100 rounded mx-auto d-block mt-3"
                 />
               </div>

@@ -19,10 +19,13 @@ class Who extends Component {
           </div>
 
           <div className="col mb-5">
-            <ReactPlayer
-              url='https://www.youtube.com/watch?v=ByvDEnOTPKI&feature=emb_logo'
-              controls={true}
-            />
+            <div className="reactPlayerWrapper">
+              <ReactPlayer
+                className='reactPlayerDimensions'
+                url='https://www.youtube.com/watch?v=ByvDEnOTPKI&feature=emb_logo'
+                controls={true}
+              />
+            </div>
           </div>
         </div>
         <div className="row row-cols-md-2">

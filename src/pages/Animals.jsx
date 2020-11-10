@@ -8,7 +8,7 @@ class Animals extends Component {
     return (
       <div className='container mt-4 mb-4'>
         <div className="input-group mb-3">
-          <div class="input-group-prepend">
+          <div className="input-group-prepend">
             <span className="input-group-text" id="basic-addon3">
               ¿Qué animal estas buscando?
             </span>

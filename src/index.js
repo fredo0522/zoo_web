@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import {BrowserRouter as Router} from 'react-router-dom';
+import {Provider} from 'react-redux';
 import store from './store';
+// Boostrap dependencies
+import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 ReactDOM.render(
   <React.StrictMode>

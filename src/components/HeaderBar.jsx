@@ -6,50 +6,59 @@ class HeaderBar extends Component {
   render() {
     return (
       <nav className='navbar navbar-expand-lg navbar-light bg-light fixed-top'>
-        <div className='navbar-brand rounded'>
-          <NavLink
-            activeClassName="navbar-brand ml-2"
-            className="navbar-brand ml-2"
-            to="/" exact
-          >
-            Zoologico Cali
-          </NavLink>
-        </div>
 
-        <div className="navbar-collapse collapse show" id="navbarCollapse">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <div className="nav-link">
-                <NavLink
-                  activeClassName='nav-item active'
-                  className='nav-link'
-                  to="/animals" exact
-                >
-                  Animales
-                </NavLink>
-              </div>
-            </li>
+        <NavLink
+          activeClassName="navbar-brand mx-auto rounded pl-2 pr-2"
+          className="navbar-brand mx-auto rounded pl-2 pr-2"
+          to="/" exact
+        >
+          Zoologico Cali
+        </NavLink>
+
+        {/* Collapse button */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mainNavbarToggle"
+          aria-controls="mainNavbarToggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Collapse menu */}
+        <div className="collapse navbar-collapse" id="mainNavbarToggle">
+          <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+
+            {/* Animals option */}
             <li className="nav-item mr-auto">
-              <div className="nav-link">
-                <NavLink
-                  activeClassName='nav-item active'
-                  className='nav-link'
-                  to='/who'
-                  exact
-                >
-                  ¿Quienes somos?
-                </NavLink>
-              </div>
+              <NavLink
+                activeClassName='nav-link ml-2 mt-2 active'
+                className='nav-link ml-2 mt-2'
+                to="/animals" exact
+              >
+                Animales
+              </NavLink>
+            </li>
+
+            {/* Quienes somos option */}
+            <li className="nav-item mr-auto">
+              <NavLink
+                activeClassName='nav-link ml-2 mt-2 active'
+                className='nav-link ml-2 mt-2'
+                to='/who'
+                exact
+              >
+                ¿Quienes somos?
+              </NavLink>
             </li>
           </ul>
 
-          <form className="form-inline mt-2 mt-md-0">
-            <div className="input-group-prepend">
-              <span className="input-group-text" id="iconSearch">
-                <FaSearch className="headerBar-icons" />
-              </span>
-            </div>
-            <input className="form-control mr-sm-2" type="text" aria-describedby="iconSearch" />
+          {/* Search in the input */}
+          <form className="form-inline my-2 my-lg-0">
+            <input className="form-control mr-sm-2" type="search" placeholder="Search" />
+            <button className="btn btn-primary my-2 my-sm-0" type="submit"><FaSearch /></button>
           </form>
         </div>
       </nav>

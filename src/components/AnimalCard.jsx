@@ -4,11 +4,9 @@ import {setAnimal} from '../actions/animal';
 import {connect} from 'react-redux';
 
 class AnimalCard extends Component {
-  
-  
   render() {
     return (
-      <div className='card'>
+      <div className='card h-100'>
         <img
           className="card-img-top"
           src={this.props.animal.img}

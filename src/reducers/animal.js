@@ -74,14 +74,14 @@ let initialState = {
       bg_img: 'https://www.bioenciclopedia.com/wp-content/uploads/2012/04/venado-cola-blanca-800.jpg'
     }
   ],
-  filtered : []
+  filtered: []
 };
 
-const getClearName = function(name, tenerEnhe = false){
+const getClearName = function (name, tenerEnhe = false) {
   let clearName = name.toUpperCase()
-  for( let i=0; i<clearName.length; i++ ){
-    if ( clearName[i]!='Ñ' || tenerEnhe){
-      clearName = clearName.substring(0, i) + clearName[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "") + clearName.substring(i+1, clearName.length);
+  for (let i = 0; i < clearName.length; i++) {
+    if (clearName[i] !== 'Ñ' || tenerEnhe) {
+      clearName = clearName.substring(0, i) + clearName[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "") + clearName.substring(i + 1, clearName.length);
     }
   }
   return clearName
@@ -96,11 +96,11 @@ const animalReducer = (state = initialState, action) => {
         animal: action.payload.animal
       };
     case 'SET_ANIMAL_BY_NAME':
-      let name = getClearName( action.payload.name )
-      for( let i=0; i<state.animals.length; i++ ){
-        let currentAnimalName = getClearName( state.animals[i].name, true )
-        if ( name == currentAnimalName ){
-          return{
+      let name = getClearName(action.payload.name)
+      for (let i = 0; i < state.animals.length; i++) {
+        let currentAnimalName = getClearName(state.animals[i].name, true)
+        if (name === currentAnimalName) {
+          return {
             ...state,
             animal: state.animals[i]
           }
@@ -111,19 +111,19 @@ const animalReducer = (state = initialState, action) => {
         animal: {}
       };
     case 'FILTER_ANIMALS':
-      let text = action.payload.text.toUpperCase().trim()  
-      if ( text == "" ){
-        return{
+      let text = action.payload.text.toUpperCase().trim()
+      if (text === "") {
+        return {
           ...state,
           filtered: state.animals
         }
       }
-      else{
-        let res = state.animals.filter( animal => getClearName( animal.name ).includes( text ) )
-        return{
-            ...state,
-            filtered: res
-          }
+      else {
+        let res = state.animals.filter(animal => getClearName(animal.name).includes(text))
+        return {
+          ...state,
+          filtered: res
+        }
       }
     default:
       return state;

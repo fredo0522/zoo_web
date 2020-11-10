@@ -16,7 +16,7 @@ class App extends Component {
       <div className="App">
         <HeaderBar />
 
-        <div className='container-fluid'>
+        <div className='w-10 mt-5'>
           <Switch>
             <Route path='/' exact>
             </Route>

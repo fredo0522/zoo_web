@@ -73,18 +73,58 @@ let initialState = {
       img: 'https://www.zoologicodecali.com.co/images/zooanimalesapp/venadoh.jpg',
       bg_img: 'https://www.bioenciclopedia.com/wp-content/uploads/2012/04/venado-cola-blanca-800.jpg'
     }
-  ]
+  ],
+  filtered : []
 };
 
-const animalReducer = (state = initialState, action) => {
-  switch (action.type) {
+const getClearName = function(name){
+  let clearName = name.toUpperCase()
+  for( let i=0; i<clearName.length; i++ ){
+    if ( clearName[i]!='Ñ' ){
+      clearName = clearName.substring(0, i) + clearName[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "") + clearName.substring(i+1, clearName.length);
+    }
+  }
+  return clearName
+}
 
+const animalReducer = (state = initialState, action) => {
+
+  switch (action.type) {
     case 'SET_ANIMAL':
       return {
         ...state,
         animal: action.payload.animal
       };
-
+    case 'SET_ANIMAL_BY_NAME':
+      let name = getClearName( action.payload.name )
+      for( let i=0; i<state.animals.length; i++ ){
+        let currentAnimalName = getClearName( state.animals[i].name )
+        if ( name == currentAnimalName ){
+          return{
+            ...state,
+            animal: state.animals[i]
+          }
+        }
+      }
+      return {
+        ...state,
+        animal: {}
+      };
+    case 'FILTER_ANIMALS':
+      let text = action.payload.text.toUpperCase().trim()  
+      if ( text == "" ){
+        return{
+          ...state,
+          filtered: state.animals
+        }
+      }
+      else{
+        let res = state.animals.filter( animal => getClearName( animal.name ).includes( text ) )
+        return{
+            ...state,
+            filtered: res
+          }
+      }
     default:
       return state;
   }

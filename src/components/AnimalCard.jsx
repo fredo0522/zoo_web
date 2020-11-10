@@ -4,6 +4,8 @@ import {setAnimal} from '../actions/animal';
 import {connect} from 'react-redux';
 
 class AnimalCard extends Component {
+  
+  
   render() {
     return (
       <div className='card'>
@@ -17,7 +19,7 @@ class AnimalCard extends Component {
           <p className="card-text">{this.props.animal.description}</p>
           <Link
             onClick={this.onAnimalCardSelect}
-            to='/details'
+            to={ '/details/' +  this.getClearName(this.props.animal.name)}
             className='btn btn-primary'
           >
             Ver más
@@ -25,6 +27,11 @@ class AnimalCard extends Component {
         </div>
       </div>
     );
+  }
+
+  getClearName(name){
+    let clearName = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")  
+    return clearName
   }
 
   constructor(props) {

@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
+import {setAnimalByName} from '../actions/animal'
 
 class AnimalDetails extends Component {
   render() {
@@ -15,12 +17,27 @@ class AnimalDetails extends Component {
       </div>
     );
   }
+
+  constructor(props){
+    super()
+  }
+
+  componentDidMount(){
+ 
+    
+    const name = this.props.match.params.name;
+    this.props.setAnimalByName(name)
 }
 
+}
+
+const mapStateToAction = {
+  setAnimalByName
+}
 const mapStateToProps = (state) => {
   return {
     animal: state.animal.animal
   };
 }
 
-export default connect(mapStateToProps)(AnimalDetails);
+export default connect(mapStateToProps, mapStateToAction)(AnimalDetails);

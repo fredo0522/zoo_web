@@ -77,10 +77,10 @@ let initialState = {
   filtered : []
 };
 
-const getClearName = function(name){
+const getClearName = function(name, tenerEnhe = false){
   let clearName = name.toUpperCase()
   for( let i=0; i<clearName.length; i++ ){
-    if ( clearName[i]!='Ñ' ){
+    if ( clearName[i]!='Ñ' || tenerEnhe){
       clearName = clearName.substring(0, i) + clearName[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "") + clearName.substring(i+1, clearName.length);
     }
   }
@@ -98,7 +98,7 @@ const animalReducer = (state = initialState, action) => {
     case 'SET_ANIMAL_BY_NAME':
       let name = getClearName( action.payload.name )
       for( let i=0; i<state.animals.length; i++ ){
-        let currentAnimalName = getClearName( state.animals[i].name )
+        let currentAnimalName = getClearName( state.animals[i].name, true )
         if ( name == currentAnimalName ){
           return{
             ...state,

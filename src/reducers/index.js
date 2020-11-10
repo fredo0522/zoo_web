@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux';
+import {combineReducers} from 'redux';
 import animalReducer from './animal';
 
 const allReducers = combineReducers({

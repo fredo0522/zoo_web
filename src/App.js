@@ -37,13 +37,28 @@ class App extends Component {
           <footer className="footer-style container-fluid">
             <div className="row row-cols-md-4">
               <div className="col mb-5">
-                <a href="https://www.youtube.com/user/zoocalitv" className="text-center">
+                <a
+                  href="https://www.youtube.com/user/zoocalitv"
+                  className="text-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaYoutube className="footer-style-icons ml-4" />
                 </a>
-                <a href="https://twitter.com/" className="text-center ml-4">
+                <a
+                  href="https://twitter.com/"
+                  className="text-center ml-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaTwitter className="footer-style-icons" />
                 </a>
-                <a href="https://es-es.facebook.com/zoologicodecali" className="text-center ml-4">
+                <a
+                  href="https://es-es.facebook.com/zoologicodecali"
+                  className="text-center ml-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaFacebookSquare className="footer-style-icons" />
                 </a>
               </div>

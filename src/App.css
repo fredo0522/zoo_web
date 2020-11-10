@@ -50,15 +50,20 @@ body {
 }
 
 .reactPlayerWrapper {
-  position: relative;
-  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  width: 100%;
+  height: 100%;
+  /* padding-top: 56.25% /1* Porcentage ratio: 16:9 *1/ */
 }
 
 .reactPlayerDimensions {
+  position: relative;
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+.reactPlayerDimensions > div {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 

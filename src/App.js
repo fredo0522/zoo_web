@@ -36,6 +36,7 @@ class App extends Component {
 
             <div className="pt-4">
               <div className="row row-cols-md-4">
+                {/* Social Apps */}
                 <div className="col-sm text-center">
                   <a
                     href="https://www.youtube.com/user/zoocalitv"
@@ -62,9 +63,11 @@ class App extends Component {
                     <FaFacebookSquare className="footer-style-icons" />
                   </a>
                 </div>
+                {/* Direccion */}
                 <div className="col-sm">
                   PBX (57 2) 4880888 - Cra. 2 oeste Calle 14 - Santa Teresita. Cali - Colombia. / Desarrollo
-              </div>
+                </div>
+                {/* Foto Patrocinadores */}
                 <div className="col-sm mb-4">
                   <img
                     src={GenericImage}

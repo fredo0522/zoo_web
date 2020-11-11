@@ -5,27 +5,32 @@ import {FaSearch} from "react-icons/fa";
 class HeaderBar extends Component {
   render() {
     return (
-      <nav className='navbar navbar-expand-lg navbar-light bg-light fixed-top'>
+      <nav className='navbar navbar-expand-lg navbar-light bg-light transparent-nav fixed-top'>
 
-        <NavLink
-          activeClassName="navbar-brand mx-auto rounded pl-2 pr-2"
-          className="navbar-brand mx-auto rounded pl-2 pr-2"
-          to="/" exact
-        >
-          Zoologico Cali
-        </NavLink>
+        {/* Brand Logo */}
+        <div className="text-left">
+          <NavLink
+            activeClassName="navbar-brand mx-auto rounded pl-2 pr-2 active"
+            className="navbar-brand mx-auto rounded pl-2 pr-2"
+            to="/" exact
+          >
+            Zoologico Cali
+          </NavLink>
+        </div>
 
         {/* Collapse button */}
         <button
-          className="navbar-toggler"
+          className='navbar-toggler navbar-toggler-right collapsed'
           type="button"
           data-toggle="collapse"
           data-target="#mainNavbarToggle"
           aria-controls="mainNavbarToggle"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
+
 
         {/* Collapse menu */}
         <div className="collapse navbar-collapse" id="mainNavbarToggle">

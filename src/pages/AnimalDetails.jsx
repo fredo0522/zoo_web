@@ -19,10 +19,6 @@ class AnimalDetails extends Component {
     );
   }
 
-  constructor(){
-    super()
-  }
-
   componentDidMount(){
     const name = this.props.match.params.name;
     this.props.setAnimalByName(name)

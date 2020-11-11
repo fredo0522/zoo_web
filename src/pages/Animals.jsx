@@ -9,9 +9,10 @@ class Animals extends Component {
     return (
       <div className='container mt-4 mb-4'>
 
+        {/* Search Animal */}
         <div className="input-group mb-3 mt-4">
           <div className="input-group-prepend">
-            <span className="input-group-text mt-4" id="basic-addon3">
+            <span className="input-group-text mt-4" id="search-animal">
               ¿Qué animal estas buscando?
             </span>
           </div>
@@ -19,7 +20,7 @@ class Animals extends Component {
             type="text"
             className="form-control mt-4"
             id="basic-url"
-            aria-describedby="basic-addon3"
+            aria-describedby="search-animal"
             onChange={(e) => this.filtrarAnimales(e)}
           />
         </div>
@@ -36,6 +37,7 @@ class Animals extends Component {
       </div>
     );
   }
+
   filtrarAnimales(e) {
     this.props.filterAnimals(e.target.value)
   }

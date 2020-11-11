@@ -3,10 +3,6 @@ body {
   padding: 0;
 }
 
-.container-fluid {
-  padding-top: 70px;
-}
-
 .navbar-brand {
   background-color: #0d47a1;
   color: #e3f2fd !important;

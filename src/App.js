@@ -16,7 +16,7 @@ class App extends Component {
       <div className="App">
         <HeaderBar />
 
-        <div className='w-10 mt-5'>
+        <div className='w-100 mt-5'>
           <Switch>
             <Route path='/' exact>
             </Route>
@@ -33,42 +33,45 @@ class App extends Component {
         {/* -------footer----- */}
         <div className="mx-auto">
           <footer className="footer-style container-fluid">
-            <div className="row row-cols-md-4">
-              <div className="col mb-5">
-                <a
-                  href="https://www.youtube.com/user/zoocalitv"
-                  className="text-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaYoutube className="footer-style-icons ml-4" />
-                </a>
-                <a
-                  href="https://twitter.com/"
-                  className="text-center ml-4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaTwitter className="footer-style-icons" />
-                </a>
-                <a
-                  href="https://es-es.facebook.com/zoologicodecali"
-                  className="text-center ml-4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaFacebookSquare className="footer-style-icons" />
-                </a>
+
+            <div className="pt-4">
+              <div className="row row-cols-md-4">
+                <div className="col-sm text-center">
+                  <a
+                    href="https://www.youtube.com/user/zoocalitv"
+                    className="text-center"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaYoutube className="footer-style-icons ml-4" />
+                  </a>
+                  <a
+                    href="https://twitter.com/"
+                    className="text-center ml-4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaTwitter className="footer-style-icons" />
+                  </a>
+                  <a
+                    href="https://es-es.facebook.com/zoologicodecali"
+                    className="text-center ml-4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaFacebookSquare className="footer-style-icons" />
+                  </a>
+                </div>
+                <div className="col-sm">
+                  PBX (57 2) 4880888 - Cra. 2 oeste Calle 14 - Santa Teresita. Cali - Colombia. / Desarrollo
               </div>
-              <div className="col mb-5">
-                PBX (57 2) 4880888 - Cra. 2 oeste Calle 14 - Santa Teresita. Cali - Colombia. / Desarrollo
-              </div>
-              <div className="col mb-5">
-                <img
-                  src={GenericImage}
-                  alt="Generic Footer"
-                  className="img-fluid w-100 rounded mx-auto d-block mt-3"
-                />
+                <div className="col-sm mb-4">
+                  <img
+                    src={GenericImage}
+                    alt="Generic Footer"
+                    className="img-fluid w-100 rounded mx-auto d-block mt-3"
+                  />
+                </div>
               </div>
             </div>
           </footer>

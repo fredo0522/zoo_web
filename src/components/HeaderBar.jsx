@@ -1,18 +1,18 @@
-import React, {Component} from 'react';
-import {NavLink} from "react-router-dom";
-import {FaSearch} from "react-icons/fa";
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
 
 class HeaderBar extends Component {
   render() {
     return (
-      <nav className='navbar navbar-expand-lg navbar-light bg-light transparent-nav fixed-top'>
-
+      <nav className="navbar navbar-expand-lg navbar-light bg-light transparent-nav fixed-top">
         {/* Brand Logo */}
         <div className="text-left">
           <NavLink
             activeClassName="navbar-brand mx-auto rounded pl-2 pr-2 active"
             className="navbar-brand mx-auto rounded pl-2 pr-2"
-            to="/" exact
+            to="/"
+            exact
           >
             Zoologico Cali
           </NavLink>
@@ -20,7 +20,7 @@ class HeaderBar extends Component {
 
         {/* Collapse button */}
         <button
-          className='navbar-toggler navbar-toggler-right collapsed'
+          className="navbar-toggler navbar-toggler-right collapsed"
           type="button"
           data-toggle="collapse"
           data-target="#mainNavbarToggle"
@@ -31,17 +31,16 @@ class HeaderBar extends Component {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-
         {/* Collapse menu */}
         <div className="collapse navbar-collapse" id="mainNavbarToggle">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-
             {/* Animals option */}
             <li className="nav-item mr-auto">
               <NavLink
-                activeClassName='nav-link ml-2 mt-2 active'
-                className='nav-link ml-2 mt-2'
-                to="/animals" exact
+                activeClassName="nav-link ml-2 mt-2 active"
+                className="nav-link ml-2 mt-2"
+                to="/animals"
+                exact
               >
                 Animales
               </NavLink>
@@ -50,9 +49,9 @@ class HeaderBar extends Component {
             {/* Quienes somos option */}
             <li className="nav-item mr-auto">
               <NavLink
-                activeClassName='nav-link ml-2 mt-2 active'
-                className='nav-link ml-2 mt-2'
-                to='/who'
+                activeClassName="nav-link ml-2 mt-2 active"
+                className="nav-link ml-2 mt-2"
+                to="/who"
                 exact
               >
                 ¿Quienes somos?
@@ -62,8 +61,14 @@ class HeaderBar extends Component {
 
           {/* Search in the input */}
           <form className="form-inline my-2 my-lg-0">
-            <input className="form-control mr-sm-2" type="search" placeholder="Search" />
-            <button className="btn btn-primary my-2 my-sm-0" type="submit"><FaSearch /></button>
+            <input
+              className="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button className="btn btn-primary my-2 my-sm-0" type="submit">
+              <FaSearch />
+            </button>
           </form>
         </div>
       </nav>

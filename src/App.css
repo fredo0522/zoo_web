@@ -10,13 +10,13 @@ body {
 
 .footer-style {
   background-color: #0d47a1 !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   margin: auto;
 }
 
 .footer-style-icons {
   font-size: 2.8em;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   background-color: #0d47a1 !important;
 }
 
@@ -31,7 +31,7 @@ body {
 
 .btn-primary:hover {
   background-color: #1565c0 !important;
-  border-color:  #1565c0 !important;
+  border-color: #1565c0 !important;
 }
 
 .text-img {

@@ -1,15 +1,15 @@
-import React, {Component} from 'react';
-import './App.css';
-import {Route, Switch} from 'react-router-dom';
-import HeaderBar from './components/HeaderBar';
-import Animals from './pages/Animals';
-import AnimalDetails from './pages/AnimalDetails';
-import Who from './pages/Who';
-import Home from './pages/Home';
-import {FaInstagram} from "react-icons/fa";
-import {FaFacebookSquare} from "react-icons/fa";
-import {FaYoutube} from "react-icons/fa";
-import GenericImage from './images/generic_image.png';
+import React, { Component } from "react";
+import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import HeaderBar from "./components/HeaderBar";
+import Animals from "./pages/Animals";
+import AnimalDetails from "./pages/AnimalDetails";
+import Who from "./pages/Who";
+import Home from "./pages/Home";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import GenericImage from "./images/generic_image.png";
 
 class App extends Component {
   render() {
@@ -17,16 +17,16 @@ class App extends Component {
       <div className="App">
         <HeaderBar />
 
-        <div className='w-100 mt-5'>
+        <div className="w-100 mt-5">
           <Switch>
-            <Route path='/' exact>
+            <Route path="/" exact>
               <Home />
             </Route>
-            <Route path='/animals' exact>
+            <Route path="/animals" exact>
               <Animals />
             </Route>
             <Route path="/details/:name" component={AnimalDetails} exact />
-            <Route path='/who' exact>
+            <Route path="/who" exact>
               <Who />
             </Route>
           </Switch>
@@ -35,7 +35,6 @@ class App extends Component {
         {/* -------footer----- */}
         <div className="mx-auto">
           <footer className="footer-style container-fluid">
-
             <div className="pt-4">
               <div className="row row-cols-md-4">
                 {/* Social Apps */}
@@ -67,7 +66,8 @@ class App extends Component {
                 </div>
                 {/* Direccion */}
                 <div className="col-sm">
-                  PBX (57 2) 4880888 - Cra. 2 oeste Calle 14 - Santa Teresita. Cali - Colombia. / Desarrollo
+                  PBX (57 2) 4880888 - Cra. 2 oeste Calle 14 - Santa Teresita.
+                  Cali - Colombia. / Desarrollo
                 </div>
                 {/* Foto Patrocinadores */}
                 <div className="col-sm mb-4">
@@ -83,7 +83,7 @@ class App extends Component {
         </div>
       </div>
     );
-  };
+  }
 }
 
 export default App;

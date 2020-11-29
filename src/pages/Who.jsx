@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+  import React, { Component } from 'react';
 import ReactPlayer from 'react-player';
 
 class Who extends Component {
@@ -49,7 +49,7 @@ class Who extends Component {
                 <h1>Misión</h1>
                 <p className="text-left">
                   Creamos experiencias inolvidables para contagiar nuestra pasión por la vida.
-              </p>
+                </p>
               </div>
               <div className="col-sm mb-5">
                 <h1>Valores</h1>

@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import {setAnimal} from '../actions/animal';
-import {connect} from 'react-redux';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { setAnimal } from "../actions/animal";
+import { connect } from "react-redux";
 
 class AnimalCard extends Component {
   render() {
     return (
-      <div className='card h-100'>
+      <div className="card h-100">
         <img
           className="card-img-top"
           src={this.props.animal.img}
@@ -18,19 +18,18 @@ class AnimalCard extends Component {
         </div>
         <Link
           onClick={this.onAnimalCardSelect}
-          to={'/details/' + this.getClearName(this.props.animal.name)}
-          className='btn btn-primary'
+          to={"/details/" + this.getClearName(this.props.animal.name)}
+          className="btn btn-primary"
         >
           Ver más
         </Link>
-
       </div>
     );
   }
 
   getClearName(name) {
-    let clearName = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    return clearName
+    let clearName = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    return clearName;
   }
 
   constructor(props) {
@@ -44,11 +43,7 @@ class AnimalCard extends Component {
 }
 
 const mapStateToActions = {
-  setAnimal
+  setAnimal,
 };
 
-export default connect(
-  null,
-  mapStateToActions
-)(AnimalCard);
-
+export default connect(null, mapStateToActions)(AnimalCard);

@@ -8,7 +8,7 @@ class Home extends Component {
       <div className="w-100 mt-4">
         <img
           src={JungleImage}
-          className="img-fluid rounded mx-auto d-block mb-3 mt-5"
+          className="img-fluid rounded mb-3"
           alt="Zoo Home page"
         />
 

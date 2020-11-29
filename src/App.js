@@ -5,6 +5,7 @@ import HeaderBar from './components/HeaderBar';
 import Animals from './pages/Animals';
 import AnimalDetails from './pages/AnimalDetails';
 import Who from './pages/Who';
+import Home from './pages/Home';
 import {FaTwitter} from "react-icons/fa";
 import {FaFacebookSquare} from "react-icons/fa";
 import {FaYoutube} from "react-icons/fa";
@@ -19,6 +20,7 @@ class App extends Component {
         <div className='w-100 mt-5'>
           <Switch>
             <Route path='/' exact>
+              <Home />
             </Route>
             <Route path='/animals' exact>
               <Animals />

@@ -17,7 +17,7 @@ class Who extends Component {
               <h1> Quienes somos </h1>
               <p>
                 Somos una organización ambiental que ofrece una experiencia única de contacto con la riqueza natural y cultural de Colombia, que promueve y ejecuta programas de educación, comunicación, recreación e investigación para la conservación de la biodiversidad colombiana.
-            </p>
+              </p>
             </div>
 
             <div className="col-sm mb-5">
@@ -40,7 +40,7 @@ class Who extends Component {
               <h1>Historia</h1>
               <p>
                 Es innegable que la región ha redescubierto al Zoológico de Cali como epicentro de conservación, que goza de credibilidad en virtud de su transparencia, honestidad y profesionalismo. Por más de una década ha ejercido un liderazgo en la comunidad zoológica nacional e internacional, promoviendo y acompañando el desarrollo de otras instituciones de su misma naturaleza, y participando activamente en la consolidación de una comunidad más comprometida con la conservación de la biodiversidad. El Zoológico de Cali ha crecido bajo una forma de organización con objetivos claros y compartidos, sustentada en principios y valores en el marco de un pensamiento estratégico que propone relatos innovadores en una institución que contribuye a crear escenarios de bienestar para las comunidades humanas y la vida silvestre. El Zoológico de Cali es una plataforma que promueve la construcción del compromiso ambiental.
-            </p>
+              </p>
             </div>
           </div>
           <div className="text-center">

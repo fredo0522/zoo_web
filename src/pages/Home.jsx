@@ -21,9 +21,14 @@ class Home extends Component {
             <div className="col-sm mb-5">
               <h1>Más que una Jaula</h1>
                 <ul className="list-unstyled text-left">
-                  <li>&#x2022; Muchos de los animales que viven en los zoológicos han sido rescatados de los circos en los que los maltrataban o han sido rescatados por las consecuencias del cambio climático en su hábitat.</li>
-                  <li>&#x2022; Gracias al cuidado del personal experto en dichas especies, los animales pueden reproducirse en cautiverio, garantizando el desarrollo pleno del animal, cosa que no podría garantizarse en un entorno natural.</li>
-                  <li>&#x2022; La calidad de muchas de las instalaciones de los zoológicos hacen que los animales puedan tener mayor garantía de vida, realizando ejercicios rutinarios y comiendo las veces necesarias, lo cual no se podría asegurar en la propia naturaleza.
+                  <li>
+                    &#x2022; Muchos de los animales que viven en los zoológicos han sido rescatados de los circos en los que los maltrataban o han sido rescatados por las consecuencias del cambio climático en su hábitat.
+                  </li>
+                  <li>
+                    &#x2022; Gracias al cuidado del personal experto en dichas especies, los animales pueden reproducirse en cautiverio, garantizando el desarrollo pleno del animal, cosa que no podría garantizarse en un entorno natural.
+                  </li>
+                  <li>
+                    &#x2022; La calidad de muchas de las instalaciones de los zoológicos hacen que los animales puedan tener mayor garantía de vida, realizando ejercicios rutinarios y comiendo las veces necesarias, lo cual no se podría asegurar en la propia naturaleza.
                   </li>
                 </ul>
             </div>

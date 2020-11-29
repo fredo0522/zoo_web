@@ -6,7 +6,7 @@ import Animals from './pages/Animals';
 import AnimalDetails from './pages/AnimalDetails';
 import Who from './pages/Who';
 import Home from './pages/Home';
-import {FaTwitter} from "react-icons/fa";
+import {FaInstagram} from "react-icons/fa";
 import {FaFacebookSquare} from "react-icons/fa";
 import {FaYoutube} from "react-icons/fa";
 import GenericImage from './images/generic_image.png';
@@ -49,12 +49,12 @@ class App extends Component {
                     <FaYoutube className="footer-style-icons ml-4" />
                   </a>
                   <a
-                    href="https://twitter.com/"
+                    href="https://www.instagram.com/zoologicodecali/"
                     className="text-center ml-4"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaTwitter className="footer-style-icons" />
+                    <FaInstagram className="footer-style-icons" />
                   </a>
                   <a
                     href="https://es-es.facebook.com/zoologicodecali"

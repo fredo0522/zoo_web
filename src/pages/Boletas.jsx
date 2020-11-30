@@ -186,7 +186,41 @@ class Boletas extends Component {
             </div>
           </div>
         </form>
-        <h1 className="text-center">Ten en cuenta antes de tu visita:</h1>
+
+        <div className="mt-4 mb-5">
+          <h1 className="text-center pb-4">
+            Ten en cuenta antes de tu visita:
+          </h1>
+
+          <p className="blockquote">
+            &#x2022; Recibimos vistantes de todas las edades. Los niños menores
+            de 2 años entran gratis.
+          </p>
+          <p className="blockquote">
+            &#x2022; Aquiere tu boleta en nuestras taquillas o en nuestra página
+            web, adquierala para un a hora especifica, como cuando asiste al
+            cine, tenemos cupos limitados por hora para asegurar el
+            distanciamiento.
+          </p>
+          <p className="blockquote">
+            &#x2022; Asegurate de llegar dentro de la franja horaria para la
+            cual adquiriste la boleta. Tendras 2 horas para disfrutar el
+            recorrido.
+          </p>
+          <p className="blockquote">
+            &#x2022; Algunos lugares tienen una capacidad de carga limitada, es
+            posible que no puedas ingredar o debas esperar.
+          </p>
+          <p className="blockquote">
+            &#x2022; Es posiblibe que en algun momento algun area este
+            temporalmente cerrada por procedimientos de bioseguridad o
+            desinfeccion.
+          </p>
+          <p className="blockquote">
+            &#x2022; Debes estar dispuesto a ajustarte a los protocolos en
+            beneficio de la bioseguridad de todos.
+          </p>
+        </div>
       </div>
     );
   }

@@ -7,22 +7,26 @@ class Boletas extends Component {
     super(props);
 
     this.state = {
-      total: 0,
       kidPrice: 17000,
       adultPrice: 24000,
       carPrice: 8000,
       motorcyclePrice: 4000,
+      total: 0,
+      fullName: "",
+      email: "",
+      typeParking: "Ninguna",
       timeVisit: "",
       dateVisit: "",
       ticketsAdult: 0,
       ticketsKid: 0,
-      typeParking: "Ninguna",
       submited: false,
     };
 
     this.handleChangeTypeParking = this.handleChangeTypeParking.bind(this);
     this.handleChangeTicketsAdult = this.handleChangeTicketsAdult.bind(this);
     this.handleChangeTicketsKid = this.handleChangeTicketsKid.bind(this);
+    this.handleChangeName = this.handleChangeName.bind(this);
+    this.handleChangeEmail = this.handleChangeEmail.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -33,8 +37,6 @@ class Boletas extends Component {
       value = this.state.carPrice;
     } else if (this.state.typeParking === "Moto") {
       value = this.state.motorcyclePrice;
-    } else {
-      value = 0;
     }
 
     // Agregar el valor al total
@@ -65,6 +67,14 @@ class Boletas extends Component {
 
     this.setState({ ticketsKid: event.target.value });
     this.setState({ total: this.state.total + currValue - befValue });
+  }
+
+  handleChangeName(event) {
+    this.setState({ fullName: event.target.value });
+  }
+
+  handleChangeEmail(event) {
+    this.setState({ email: event.target.value });
   }
 
   handleSubmit(event) {
@@ -110,7 +120,9 @@ class Boletas extends Component {
               role="alert"
             >
               <h4 className="alert-heading">Transaccion Realizada</h4>
-              <p>Se ha hecho la reserva con exito.</p>
+              <p>
+                Se ha hecho la reserva con exito. Gracias {this.state.fullName}.
+              </p>
               <button
                 type="button"
                 className="close"
@@ -125,6 +137,30 @@ class Boletas extends Component {
           {/* Reserva */}
           <div className="row row-cols-md-3 mt-2">
             <div className="col-sm mb-5">
+              <label htmlFor="fullName" className="font-weight-bold">
+                Nombre y apellidos
+              </label>
+              <input
+                type="text"
+                aria-label="Nombre y apellidos"
+                className="form-control"
+                id="fullName"
+                onChange={this.handleChangeName}
+                required
+              />
+
+              <label htmlFor="fullName" className="font-weight-bold">
+                Correo electronico
+              </label>
+              <input
+                type="email"
+                aria-label="Email"
+                className="form-control"
+                id="fullName"
+                onChange={this.handleChangeEmail}
+                required
+              />
+
               <label htmlFor="visitDate" className="font-weight-bold">
                 Dia de la visita
               </label>

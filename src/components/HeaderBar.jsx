@@ -57,6 +57,18 @@ class HeaderBar extends Component {
                 ¿Quienes somos?
               </NavLink>
             </li>
+
+            {/* Boleteria options */}
+            <li className="nav-item mr-auto">
+              <NavLink
+                activeClassName="nav-link ml-2 mt-2 active"
+                className="nav-link ml- mt-2"
+                to="/boletas"
+                exact
+              >
+                Boleteria
+              </NavLink>
+            </li>
           </ul>
 
           {/* Search in the input */}

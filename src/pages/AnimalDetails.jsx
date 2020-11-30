@@ -28,6 +28,7 @@ class AnimalDetails extends Component {
 const mapStateToAction = {
   setAnimalByName,
 };
+
 const mapStateToProps = (state) => {
   return {
     animal: state.animal.animal,

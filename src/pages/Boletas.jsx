@@ -68,34 +68,14 @@ class Boletas extends Component {
   }
 
   handleSubmit(event) {
-    event.preventDefault();
     this.setState({ submited: true });
+    event.preventDefault();
   }
 
   render() {
     return (
       <div className="container pt-4">
-        {/* Notificacion de transaccion */}
-        {this.state.submited && (
-          <div
-            class="alert alert-success alert-dismissible fade show"
-            role="alert"
-          >
-            <h4 class="alert-heading">Transaccion Realizada</h4>
-            <p>Se ha hecho la reserva con exito.</p>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="alert"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-        )}
-
-        {/* Tabla de precios y disponibilidad */}
-        <h1 className="text-center">Disponibilidad de boletas</h1>
+        <h1 className="text-center">Disponibilidad de boleteria</h1>
         <table className="table table-striped table-bordered mt-3">
           <tbody>
             <tr>
@@ -123,6 +103,25 @@ class Boletas extends Component {
 
         {/* Total y opciones de compra y datos de la reserva */}
         <form onSubmit={this.handleSubmit}>
+          {/* Notificacion de transaccion */}
+          {this.state.submited && (
+            <div
+              className="toast alert alert-success alert-dismissible fade show fixed-bottom mr-2 ml-auto"
+              role="alert"
+            >
+              <h4 className="alert-heading">Transaccion Realizada</h4>
+              <p>Se ha hecho la reserva con exito.</p>
+              <button
+                type="button"
+                className="close"
+                data-dismiss="alert"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          )}
+
           {/* Reserva */}
           <div className="row row-cols-md-3 mt-2">
             <div className="col-sm mb-5">
@@ -199,12 +198,12 @@ class Boletas extends Component {
           {/* Opciones de compra */}
           <div className="row row-cols-md-2 mt-2">
             <div className="col-sm mb-5">
-              <h2 className="text-left">Total: $ {this.state.total} </h2>
+              <h2 className="h2 text-left">Total: $ {this.state.total} </h2>
             </div>
 
             <div className="col-sm mb-5 text-right">
               <button type="submit" className="btn btn-success">
-                Comprar Boletas
+                Reservar Boletas
               </button>
             </div>
           </div>

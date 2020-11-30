@@ -17,6 +17,7 @@ class Boletas extends Component {
       ticketsAdult: 0,
       ticketsKid: 0,
       typeParking: "Ninguna",
+      submited: false,
     };
 
     this.handleChangeTypeParking = this.handleChangeTypeParking.bind(this);
@@ -66,11 +67,33 @@ class Boletas extends Component {
     this.setState({ total: this.state.total + currValue - befValue });
   }
 
-  handleSubmit(event) {}
+  handleSubmit(event) {
+    event.preventDefault();
+    this.setState({ submited: true });
+  }
 
   render() {
     return (
       <div className="container pt-4">
+        {/* Notificacion de transaccion */}
+        {this.state.submited && (
+          <div
+            class="alert alert-success alert-dismissible fade show"
+            role="alert"
+          >
+            <h4 class="alert-heading">Transaccion Realizada</h4>
+            <p>Se ha hecho la reserva con exito.</p>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="alert"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        )}
+
         {/* Tabla de precios y disponibilidad */}
         <h1 className="text-center">Disponibilidad de boletas</h1>
         <table className="table table-striped table-bordered mt-3">

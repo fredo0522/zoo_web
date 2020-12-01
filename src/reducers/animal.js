@@ -80,7 +80,7 @@ let initialState = {
         "Nadie como él para adaptarse a cualquier territorio, sean bosques densos o desiertos, llanuras o montañas, zonas frías o cálidas. Habita con destreza en toda América, desde Canadá hasta los Andes del extremo sur. Para vivir en tantos lugares tuvo que aprender a alimentarse casi de cualquier otro animal, desde pequeños insectos hasta grandes ciervos. Domina perfectamente el arte de la emboscada, cuando el hambre aparece, se esconde con sigilo y aguarda pacientemente hasta que llegua el momento adecuado para dar un poderoso salto y clavar con precisión sus colmillos en el cuello de la presa.",
       img: "https://www.zoologicodecali.com.co/images/zooanimalesapp/pumah.jpg",
       bg_img:
-        "https://natgeo.imgix.net/factsheets/thumbnails/puma_puma.jpg?auto=compress,format&w=1600&h=900&fit=crop",
+        "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.4lgFOLYwrWCQZ1_8NI_gIQHaEK%26pid%3DApi&f=1",
     },
     {
       id: 8,

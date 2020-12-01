@@ -69,6 +69,17 @@ class HeaderBar extends Component {
                 Boleteria
               </NavLink>
             </li>
+            {/* Clases virtuales option */}
+            <li className="nav-item mr-auto">
+              <NavLink
+                activeClassName="nav-link ml-2 mt-2 active"
+                className="nav-link ml- mt-2"
+                to="/clasesVirtuales"
+                exact
+              >
+                Clases Virtuales
+              </NavLink>
+            </li>
           </ul>
 
           {/* Search in the input */}

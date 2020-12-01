@@ -2,9 +2,17 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 import AnimalCard from "../components/AnimalCard";
-import { filterAnimals, getAnimals } from "../actions/animal";
+import { getAnimals } from "../actions/animal";
 
 class Animals extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+      animals: []
+    }
+  }
+
   render() {
     return (
       <div className="container mt-4 mb-4">
@@ -25,36 +33,62 @@ class Animals extends Component {
         </div>
 
         <div className="row row-cols-md-3">
-          {this.props.filtered.map((animal) => {
-            return (
-              <div className="col-sm mb-4" key={animal.id}>
-                <AnimalCard animal={animal} />
-              </div>
-            );
-          })}
+          {
+            this.state.animals.map((animal) => {
+              return (
+                <div className="col-sm mb-4" key={animal.id}>
+                  <AnimalCard animal={animal} />
+                </div>
+              );
+            })
+          }
         </div>
       </div>
     );
   }
 
-  filtrarAnimales(e) {
-    this.props.filterAnimals(e.target.value);
-  }
+  getClearName = function (name, tenerEnhe = false) {
+    let clearName = name.toUpperCase();
+    for (let i = 0; i < clearName.length; i++) {
+      if (clearName[i] !== "Ñ") {
+        clearName =
+          clearName.substring(0, i) +
+          clearName[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "") +
+          clearName.substring(i + 1, clearName.length);
+      }
+    }
+    return clearName;
+  };
 
-  componentDidMount() {
-    this.props.getAnimals()
-    this.props.filterAnimals("");
+  filtrarAnimales(e) {
+      let text = ""
+      if ( e !== null ){
+        text = e.target.value.toUpperCase().trim();
+      }
+      if ( text === "" ){
+        let filtered = this.props.animals
+        this.setState( {animals: filtered} )
+      }
+      else{
+        text = this.getClearName(text)
+        let filtered = this.props.animals.filter( (animal) => this.getClearName(animal.name).includes(text) )
+        this.setState( {animals: filtered} )
+      }
+  } 
+
+  async componentDidMount() {
+    await this.props.getAnimals()
+    this.filtrarAnimales(null)
   }
 }
 
 const mapStateToAction = {
-  filterAnimals,
   getAnimals
 };
 
 const mapStoreToProps = (state) => {
   return {
-    filtered: state.animal.filtered,
+    animals: state.animal.animals,
   };
 };
 

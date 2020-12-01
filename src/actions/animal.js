@@ -7,13 +7,6 @@ export const setAnimal = (animal) => (dispatch) => {
     });
 };
 
-export const filterAnimals = (text) => (dispatch) => {
-    dispatch({
-        type: "FILTER_ANIMALS",
-        payload: { name: text },
-    });
-};
-
 export const setAnimalById = (id) => (dispatch) => {
     dispatch({
         type: "SET_ANIMAL_BY_ID",
@@ -22,13 +15,11 @@ export const setAnimalById = (id) => (dispatch) => {
 };
 
 export const getAnimals = () => async (dispatch) => {
-    axios.get('/animals').then((response) => {
-        const respuesta = response.data.animals
-
-        console.log( respuesta, " vs. ", response )
+    
+    await axios.get('/animals').then((response) => {
         dispatch({
             type: 'SET_ANIMALS',
-            payload: { animals: respuesta }
+            payload: { animals: response.data.animals }
         })
     })
 }

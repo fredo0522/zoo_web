@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { setAnimalByName } from "../actions/animal";
+import { setAnimalById } from "../actions/animal";
 
 class AnimalDetails extends Component {
   render() {
@@ -20,13 +20,13 @@ class AnimalDetails extends Component {
   }
 
   componentDidMount() {
-    const name = this.props.match.params.name;
-    this.props.setAnimalByName(name);
+    const id = this.props.match.params.id;
+    this.props.setAnimalById(id);
   }
 }
 
 const mapStateToAction = {
-  setAnimalByName,
+  setAnimalById,
 };
 
 const mapStateToProps = (state) => {

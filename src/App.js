@@ -26,7 +26,7 @@ class App extends Component {
             <Route path="/animals" exact>
               <Animals />
             </Route>
-            <Route path="/details/:name" component={AnimalDetails} exact />
+            <Route path="/details/:id" component={AnimalDetails} exact />
             <Route path="/who" exact>
               <Who />
             </Route>

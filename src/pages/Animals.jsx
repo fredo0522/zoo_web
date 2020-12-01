@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 import AnimalCard from "../components/AnimalCard";
-import { filterAnimals } from "../actions/animal";
+import { filterAnimals, getAnimals } from "../actions/animal";
 
 class Animals extends Component {
   render() {
@@ -42,12 +42,14 @@ class Animals extends Component {
   }
 
   componentDidMount() {
+    this.props.getAnimals()
     this.props.filterAnimals("");
   }
 }
 
 const mapStateToAction = {
   filterAnimals,
+  getAnimals
 };
 
 const mapStoreToProps = (state) => {

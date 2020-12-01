@@ -10,7 +10,7 @@ let initialState = {
         "De todos los felinos del planeta, son los únicos que viven en familia. Cuando llega el momento de buscar alimento las hembras adultas toman la iniciativa, y sólo si la presa es muy grande, el macho suspenderá repentimanente su descanso para sumarse a la cacería. Las crías aprenden poco a poco jugando entre ellas y empiezan a participar de la búsqueda de alimento cuando cumplen más de un año. Son verdaderos amantes del descanso, en cada familia por una hora de actividad se garantizan diez horas de pausa.",
       img: "https://www.zoologicodecali.com.co/images/zooanimalesapp/leonh.jpg",
       bg_img:
-        "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fninstravelog.files.wordpress.com%2F2013%2F10%2F10-15-lion-pride-1.jpg%3Fw%3D960&f=1&nofb=1",
+        "http://4.bp.blogspot.com/-xJxeP-SiSSQ/UWk0iUK-SUI/AAAAAAAAAFs/XeF6ccjodcQ/s1600/Lion-King-Of-Jungle.jpg",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ let initialState = {
         "Detrás de su amigable apariencia hay un astuto y recursivo animal que no se vara cuando de buscar alimento se trata. Si este abunda escoge sólo mejor, pero si escasea, no tiene problema en aventurarse a recorrer grandes distancias hasta encontrar el menú que saciará su hambre. Le encantan los roedores, los cangrejos, las ranas, los reptiles, las aves, las tortugas e incluso los insectos; pero si encuentra huevos, semillas o una que otra fruta silvestre, no dudará en hacerlo parte del almuerzo.",
       img:
         "https://www.zoologicodecali.com.co/images/zooanimalesapp/zorrocaeroh.jpg",
-      bg_img: "https://okdiario.com/img/2020/02/13/razas-y-tipos-de-zorros.jpg",
+      bg_img: "https://i.pinimg.com/originals/38/09/51/3809511eecc6cee095d0ba447d88680d.jpg",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ let initialState = {
       img:
         "https://www.zoologicodecali.com.co/images/zooanimalesapp/jaguarh.jpg",
       bg_img:
-        "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.tompkinsconservation.org%2Fnews%2Fwp-content%2Fuploads%2F2019%2F06%2Fjaguar_cubs.jpg&f=1&nofb=1",
+        "http://weknowyourdreams.com/images/jaguar/jaguar-01.jpg",
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ let initialState = {
       img:
         "https://www.zoologicodecali.com.co/images/zooanimalesapp/nutriah.jpg",
       bg_img:
-        "https://imagenes.20minutos.es/files/image_656_370/uploads/imagenes/2019/05/30/964855.jpg",
+        "http://3.bp.blogspot.com/-jSsBrGMrrPI/VhM8SDWVwcI/AAAAAAAA3K8/Fq0L3QZUVeU/s1600/NUTRIA%2BGIGANTE%2BDEL%2BAMAZONAS%2B2.JPG",
     },
     {
       id: 5,
@@ -57,7 +57,7 @@ let initialState = {
       img:
         "https://www.zoologicodecali.com.co/images/zooanimalesapp/osopardoh.jpg",
       bg_img:
-        "https://verdeyazul.diarioinformacion.com/wp-content/uploads/2020/07/portada-article-img-20-1024x683.jpg",
+        "http://1.bp.blogspot.com/-0pDivEgq2Ww/UZPHCDSoEUI/AAAAAAAAADI/V1YK4ItM-88/s1600/P1130074.JPG",
     },
     {
       id: 6,
@@ -69,7 +69,7 @@ let initialState = {
       img:
         "https://www.zoologicodecali.com.co/images/zooanimalesapp/anacondah.jpg",
       bg_img:
-        "https://cr00.epimg.net/radio/imagenes/2020/07/26/regional/1595790649_896429_1595790766_noticia_normal.jpg",
+        "https://www.wrs.com.sg/content/dam/wrs/river-safari/animals/signpost/1x1/green-anaconda-1X1.jpg",
     },
     {
       id: 7,
@@ -80,7 +80,7 @@ let initialState = {
         "Nadie como él para adaptarse a cualquier territorio, sean bosques densos o desiertos, llanuras o montañas, zonas frías o cálidas. Habita con destreza en toda América, desde Canadá hasta los Andes del extremo sur. Para vivir en tantos lugares tuvo que aprender a alimentarse casi de cualquier otro animal, desde pequeños insectos hasta grandes ciervos. Domina perfectamente el arte de la emboscada, cuando el hambre aparece, se esconde con sigilo y aguarda pacientemente hasta que llegua el momento adecuado para dar un poderoso salto y clavar con precisión sus colmillos en el cuello de la presa.",
       img: "https://www.zoologicodecali.com.co/images/zooanimalesapp/pumah.jpg",
       bg_img:
-        "https://okdiario.com/img/2019/06/24/puma-en-peligro-de-extincion.jpg",
+        "https://natgeo.imgix.net/factsheets/thumbnails/puma_puma.jpg?auto=compress,format&w=1600&h=900&fit=crop",
     },
     {
       id: 8,
@@ -92,7 +92,7 @@ let initialState = {
       img:
         "https://www.zoologicodecali.com.co/images/zooanimalesapp/aguilarealh.jpg",
       bg_img:
-        "https://www.bioenciclopedia.com/wp-content/uploads/2013/09/aguila-real-informacion.jpg",
+        "https://1.bp.blogspot.com/-saQjmlnvxu4/WK_yZXTa6II/AAAAAAAAaH4/meswXGT-LCMye4ballS1PpjPkLa4B29NACLcB/s1600/aguilareal1sm.JPG",
     },
     {
       id: 9,
@@ -104,7 +104,7 @@ let initialState = {
       img:
         "https://www.zoologicodecali.com.co/images/zooanimalesapp/venadoh.jpg",
       bg_img:
-        "https://www.bioenciclopedia.com/wp-content/uploads/2012/04/venado-cola-blanca-800.jpg",
+        "https://4.bp.blogspot.com/-6tNYmv8dRFk/Vy_HoTt9GdI/AAAAAAAAAt8/0-2Tdh8dRBsA-ldEGfXx13pP81vLWciHACLcB/s1600/Foto-3.jpg",
     },
   ],
   filtered: [],

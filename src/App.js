@@ -7,6 +7,7 @@ import AnimalDetails from "./pages/AnimalDetails";
 import Who from "./pages/Who";
 import Home from "./pages/Home";
 import Boletas from "./pages/Boletas";
+import ClasesVirtuales from "./pages/ClasesVirtuales";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
@@ -32,6 +33,9 @@ class App extends Component {
             </Route>
             <Route path="/boletas" exact>
               <Boletas />
+            </Route>
+            <Route path="/clasesVirtuales" exact>
+              <ClasesVirtuales />
             </Route>
           </Switch>
         </div>

@@ -43,6 +43,15 @@ body {
   font-size: 5vw;
 }
 
+.text-img-aux {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 5vw;
+}
+
 .img-thumbnail {
   border-radius: 0px !important;
   border: 0px !important;
@@ -51,4 +60,8 @@ body {
 .img-container {
   position: relative;
   text-align: center;
+}
+
+.img-aux {
+  height: 30vw !important;
 }

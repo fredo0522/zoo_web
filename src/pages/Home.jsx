@@ -53,8 +53,8 @@ class Home extends Component {
               />
             </div>
           </div>
-          <div className="text-center mt-4 mb-4">
-            <h1>Noticias Relevantes</h1>
+          <div className="mt-4 mb-4">
+            <h1 className="text-center">Noticias Relevantes</h1>
             <News />
           </div>
           <Map />

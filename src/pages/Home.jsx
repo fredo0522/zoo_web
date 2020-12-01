@@ -1,19 +1,22 @@
 import React, { Component } from "react";
-import JungleImage from "../images/jungle-image.jpg";
+import HomeImage from "../images/jungle-image.jpg";
 import Map from "../components/Map";
+import News from "../components/News";
 
 class Home extends Component {
   render() {
     return (
       <div className="w-100 mt-4">
-        <img
-          src={JungleImage}
-          className="img-fluid rounded mb-3"
-          alt="Zoo Home page"
-        />
+        <div className="img-container">
+          <img
+            src={HomeImage}
+            className="img-fluid rounded mx-auto d-block mb-3 mt-5 w-100"
+            alt="Zoo Home page"
+          />
 
-        <div className="text-img text-center text-wrap">
-          Bienvenidos al Zoologico de Cali
+          <div className="text-img text-center text-wrap">
+            Bienvenidos al Zoologico de Cali
+          </div>
         </div>
 
         <div className="container mt-4">
@@ -50,8 +53,9 @@ class Home extends Component {
               />
             </div>
           </div>
-          <div className="text-center">
+          <div className="text-center mt-4 mb-4">
             <h1>Noticias Relevantes</h1>
+            <News />
           </div>
           <Map />
         </div>

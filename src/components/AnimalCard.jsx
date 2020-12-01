@@ -18,18 +18,13 @@ class AnimalCard extends Component {
         </div>
         <Link
           onClick={this.onAnimalCardSelect}
-          to={"/details/" + this.getClearName(this.props.animal.name)}
+          to={"/details/" + this.props.animal.id}
           className="btn btn-primary"
         >
           Ver más
         </Link>
       </div>
     );
-  }
-
-  getClearName(name) {
-    let clearName = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    return clearName;
   }
 
   constructor(props) {

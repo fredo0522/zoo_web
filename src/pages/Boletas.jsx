@@ -112,6 +112,7 @@ class Boletas extends Component {
         </table>
 
         {/* Total y opciones de compra y datos de la reserva */}
+        <h1 className="text-center pt-2 pb-2">Información de tu Reserva</h1>
         <form onSubmit={this.handleSubmit}>
           {/* Notificacion de transaccion */}
           {this.state.submited && (
@@ -150,7 +151,7 @@ class Boletas extends Component {
               />
 
               <label htmlFor="fullName" className="font-weight-bold">
-                Correo electronico
+                Email
               </label>
               <input
                 type="email"
@@ -162,7 +163,7 @@ class Boletas extends Component {
               />
 
               <label htmlFor="visitDate" className="font-weight-bold">
-                Dia de la visita
+                Día de la visita
               </label>
               <input
                 type="date"
@@ -188,7 +189,7 @@ class Boletas extends Component {
               />
 
               <label htmlFor="quantityAdults" className="font-weight-bold">
-                Numero Boletas de Adultos
+                Número Boletas para Adultos
               </label>
               <input
                 onChange={this.handleChangeTicketsAdult}
@@ -201,7 +202,7 @@ class Boletas extends Component {
               />
 
               <label htmlFor="quantityKids" className="font-weight-bold">
-                Numero Boletas de Niños
+                Número Boletas para Niños
               </label>
               <input
                 onChange={this.handleChangeTicketsKid}
@@ -215,7 +216,7 @@ class Boletas extends Component {
             </div>
             <div className="col-sm mb-5">
               <label htmlFor="parkService" className="font-weight-bold">
-                Servicio Parqueadero
+                Servicio de Parqueadero
               </label>
               <select
                 defaultValue={this.state.typeParking}
